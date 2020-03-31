@@ -19,10 +19,11 @@ export default StyleSheet.create ({
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
-        marginTop: 48,
+        marginTop: 24,
     },
 
     incidentProperty: {
+        flexDirection: 'row',
         fontSize: 14,
         color: '#41414d',
         fontWeight: 'bold',
@@ -36,10 +37,11 @@ export default StyleSheet.create ({
     },
 
     contactBox: {
-        padding: 24,
+        padding: 16,
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
+        
     },
 
     heroTitle: {
@@ -59,6 +61,7 @@ export default StyleSheet.create ({
         marginTop: 16,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        
     },
 
     action: {
@@ -68,6 +71,7 @@ export default StyleSheet.create ({
         width: '48%',
         justifyContent: 'center',
         alignItems: 'center',
+        
     },
 
     actionText: {

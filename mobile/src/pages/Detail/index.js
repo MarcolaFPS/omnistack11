@@ -32,19 +32,22 @@ export default function Detail() {
 
     return(
         <View style={styles.container}>
-        <View style={styles.header}>
-                <Image source={logoImg} />
-                <TouchableOpacity onPress={navigateBack}>
-                    <Feather name="arrow-left" size={28} color="#e02041"></Feather>
-                </TouchableOpacity>
+            <View style={styles.header}>
+                    <Image source={logoImg} />
+                    <TouchableOpacity onPress={navigateBack}>
+                        <Feather name="arrow-left" size={28} color="#e02041"></Feather>
+                    </TouchableOpacity>
             </View>
 
             <View style={styles.incident}>
                 <Text style={[styles.incidentProperty, { marginTop: 0 }]}>ONG:</Text>
                 <Text style={styles.incidentValue}>{incident.name} de {incident.city}/{incident.uf}</Text>
-
+                
                 <Text style={styles.incidentProperty}>CASO:</Text>
                 <Text style={styles.incidentValue}>{incident.title}</Text>
+
+                <Text style={styles.incidentProperty}>DESCRIÇÃO:</Text>
+                <Text style={styles.incidentValue}>{incident.description}</Text>
 
                 <Text style={styles.incidentProperty}>VALOR:</Text>
                 <Text style={styles.incidentValue}>
